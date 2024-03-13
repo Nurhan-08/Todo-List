@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link id="theme" rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">Todo List</h2>
+        <div class="todo-header">
+            <div class="todo-search">
+                <input id="search" type="text" placeholder="Search note...">
+                <span class="search-icon"><i class="bi bi-search"></i></span>
+            </div>
+            <div class="todo-filter">
+                <select id="todo-status">
+                    <option value="all">All</option>
+                    <option value="complete">Complete</option>
+                    <option value="incomplete">InComplete</option>
+                </select>
+            </div>
+            <div class="todo-theme">
+                <button><i class="bi bi-moon"></i> <img class="img1" src="./img/Vector.svg" alt=""> </button>
+            </div>
+        </div>
+        <div class="todo-list">
+            <div class="list-item">
+                <div class="text">
+                    <input type="checkbox">
+                    <span>NOTE #1</span>
+                </div>
+                <div class="item-btns">
+                    <button id="todo-pen"><i class="bi bi-pen"></i></button>
+                    <button id="but1"><i class="bi bi-trash3"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="float-btn">
+            <i id="plus1" class="bi bi-plus-lg"></i>
+        </div>
+    </div>
+
+
+    <div class="overlay">
+        <div class="popup">
+            <h2>New Note</h2>
+            <input id="note" type="text" placeholder="Input your note ...">
+            <div class="flex">
+                <button class="btn cancel">Cancel</button>
+                <button class="btn" id="apply">Apply</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

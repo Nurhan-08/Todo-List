@@ -1,0 +1,195 @@
+body {
+    background-color: #424242;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    width: 750px;
+    margin: auto;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.todo-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.todo-search {
+    flex-grow: 1;
+    border: 1px solid #6c63ff;
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 16px;
+    border-radius: 5px;
+}
+
+.todo-search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: none;
+}
+
+
+
+.search-icon {
+    color: #6c63ff;
+}
+
+.todo-filter select {
+    width: 85px;
+    height: 38px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    background: #6c63ff;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.todo-theme button {
+    width: 85px;
+    height: 38px;
+    border-radius: 5px;
+    font-size: 18px;
+    background: #6c63ff;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.todo-list {
+    width: 100%;
+    padding: 0 115px;
+    margin-top: 30px;
+    height: 500px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #6c63ff;
+    padding: 17px 0px;
+}
+
+.text {
+    display: flex;
+    gap: 17px;
+}
+
+.item-btns {
+    display: flex;
+    gap: 15px;
+}
+
+.item-btns button {
+    padding: 8px;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.float-btn {
+    position: absolute;
+    bottom: 32px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.float-btn i {
+    background-color: #6c63ff;
+    border-radius: 50%;
+    color: #fff;
+    padding: 13px;
+}
+
+.todo-theme img {
+    display: none;
+    margin-left: 18px;
+}
+
+
+
+
+
+.overlay {
+    position: absolute;
+    /* left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0; */
+    inset: 0;
+    background: #00000080;
+    display: none;
+}
+
+.popup {
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 16px;
+    padding: 18px 30px;
+}
+
+.popup h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.popup input {
+    border: 1px solid #6c63ff;
+    padding: 11px 16px;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    background: none;
+    margin-bottom: 128px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup .btn {
+    border-radius: 5px;
+    font-size: 18px;
+    background: #6c63ff;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    width: 110px;
+    height: 38px;
+}
+
+.popup .btn.cancel {
+    background: none;
+    color: #6c63ff;
+    border: 1px solid #6c63ff;
+}
